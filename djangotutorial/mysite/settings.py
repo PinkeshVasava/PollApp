@@ -22,9 +22,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Your Polls App
-    'djangotutorial.polls',
+    'djangotutorial.polls',   # ✅ THIS LINE MUST BE LIKE THIS
 ]
+
 
 
 MIDDLEWARE = [

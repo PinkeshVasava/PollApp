@@ -2,8 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-
-    # Correct path to polls app
-    path("polls/", include("djangotutorial.polls.urls")),
+    path('', include('djangotutorial.polls.urls')),  # 👈 this makes homepage open polls
+    path('admin/', admin.site.urls),
+    path('polls/', include('djangotutorial.polls.urls')),
 ]
