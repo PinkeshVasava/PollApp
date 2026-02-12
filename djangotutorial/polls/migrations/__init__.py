@@ -1,1 +1,0 @@
-# this file is responsible for doing migrations
